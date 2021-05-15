@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0yYp0DaiYwOFGbGlymLFKav1iHkuGPhgCPjg3B3gD0lOxVPv1T4Uwl9gKNdztKOLptl8nljho9QOusaHWCKEg==",
+  "dgSpecHash": "KFYCqsL54Q+llD5Cyk7vVYdy4yXaGPZnMi16+V9p6OMRtzh8m+lUeL9wm+h9cNfgnEcn+aWjIAkomShb/PcPiw==",
   "success": true,
-  "projectFilePath": "D:\\testmvc\\testmvc.csproj",
+  "projectFilePath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\toddb\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\toddb\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
