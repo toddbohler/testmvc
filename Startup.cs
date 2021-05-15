@@ -24,6 +24,8 @@ namespace testmvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //services.AddTransient<testmvc.Models.Person, testmvc.Models.Person>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

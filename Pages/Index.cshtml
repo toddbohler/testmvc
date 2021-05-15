@@ -8,3 +8,28 @@
     <h1 class="display-4">Welcome Bitches</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<div class="col-lg-1">
+    <form method="post" target="_self">
+        <button class="btn btn-default">Submit</button>
+    </form>
+</div>
+<div class="col-lg-1">
+        <form asp-page-handler="view" asp-route-id="4" method="post">
+            <button class="btn btn-default">View</button>
+        </form>
+</div>
+<h5>@Model.Message</h5>
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <strong>@Html.LabelFor(m => m.firstName):</strong> @Html.TextBoxFor(m => m.firstName)<br>
+    <strong>@Html.LabelFor(m => m.lastName):</strong> @Html.TextBoxFor(m => m.lastName)<br>
+    <strong>@Html.LabelFor(m => m.Age):</strong>
+    <select asp-for="Age" asp-items="Model.Items">
+        <option value="">Pick one</option>
+    </select><br>
+    <input type="submit" id="Submit">
+}
+<hr>
+<strong>@Html.Label("firstName"):</strong> @Html.DisplayFor(m => m.firstName)<br>
+<strong>@Html.Label("lastName"):</strong> @Html.DisplayFor(m => m.lastName)<br>
+<strong>@Html.Label("Age"):</strong> @Html.DisplayFor(m => m.Age)<br>
