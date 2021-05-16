@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj": {}
+    "D:\\testmvc\\testmvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj": {
+    "D:\\testmvc\\testmvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
+        "projectUniqueName": "D:\\testmvc\\testmvc.csproj",
         "projectName": "testmvc",
-        "projectPath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
+        "projectPath": "D:\\testmvc\\testmvc.csproj",
         "packagesPath": "C:\\Users\\toddb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\obj\\",
+        "outputPath": "D:\\testmvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
