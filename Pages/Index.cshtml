@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -8,7 +8,7 @@
     <h1 class="display-4">Welcome Bitches</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-<div class="col-lg-1">
+<!--<div class="col-lg-1">
     <form method="post" target="_self">
         <button class="btn btn-default">Submit</button>
     </form>
@@ -17,19 +17,75 @@
         <form asp-page-handler="view" asp-route-id="4" method="post">
             <button class="btn btn-default">View</button>
         </form>
-</div>
-<h5>@Model.Message</h5>
+</div>-->
+
 @using (Html.BeginForm(FormMethod.Post))
 {
-    <strong>@Html.LabelFor(m => m.firstName):</strong> @Html.TextBoxFor(m => m.firstName)<br>
-    <strong>@Html.LabelFor(m => m.lastName):</strong> @Html.TextBoxFor(m => m.lastName)<br>
-    <strong>@Html.LabelFor(m => m.Age):</strong>
-    <select asp-for="Age" asp-items="Model.Items">
-        <option value="">Pick one</option>
-    </select><br>
-    <input type="submit" id="Submit">
-}
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.firstName)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.firstName, htmlAttributes: new{@class = "form-control textbx"})
+            <span>@Html.ValidationMessageFor(m => m.firstName, "", new {@class = "text-validation"})</span>
+        </div>
+        
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.lastName)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.lastName, htmlAttributes: new{@class = "form-control textbx"})</div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.address)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.address, htmlAttributes: new{@class = "form-control textbx"})</div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.city)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.city, htmlAttributes: new{@class = "form-control textbx"})</div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.state)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.state, htmlAttributes: new{@class = "form-control textbx"})</div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.zipcode)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.zipcode, htmlAttributes: new{@class = "form-control textbx"})</div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.email)</label>
+        <div class="col-sm-10">@Html.TextBoxFor(m => m.email, htmlAttributes: new{@class = "form-control textbx"})
+            <span>@Html.ValidationMessageFor(m => m.email, "", new {@class = "text-validation"})</span>
+        </div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label">@Html.LabelFor(m => m.Age)</label>
+        <div class="col-sm-10">
+            <select asp-for="Age" asp-items="Model.Items" class="form-control textbx">
+                <option value="">Pick one</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input type="submit" value="Check Values" asp-page-handler = "FirstSubmit" class="btn btn-primary textbx">
+        </div>
+    </div>
 <hr>
-<strong>@Html.Label("firstName"):</strong> @Html.DisplayFor(m => m.firstName)<br>
-<strong>@Html.Label("lastName"):</strong> @Html.DisplayFor(m => m.lastName)<br>
-<strong>@Html.Label("Age"):</strong> @Html.DisplayFor(m => m.Age)<br>
+    <strong>@Html.Label("firstName"):</strong> @Html.DisplayFor(m => m.firstName)<br>
+    <strong>@Html.Label("lastName"):</strong> @Html.DisplayFor(m => m.lastName)<br>
+    <strong>@Html.Label("address"):</strong> @Html.DisplayFor(m => m.address)<br>
+    <strong>@Html.Label("city"):</strong> @Html.DisplayFor(m => m.city)<br>
+    <strong>@Html.Label("state"):</strong> @Html.DisplayFor(m => m.state)<br>
+    <strong>@Html.Label("zipcode"):</strong> @Html.DisplayFor(m => m.zipcode)<br>
+    <strong>@Html.Label("Email"):</strong> @Html.DisplayFor(m => m.email)<br>
+    <strong>@Html.Label("Age"):</strong> @Html.DisplayFor(m => m.Age)<br>
+    
+    <div class="form-page row">
+        <label class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input type="submit" value="Submit Values" asp-page-handler = "SecondSubmit" class="btn btn-primary textbx">
+        </div>
+    </div>
+}
+<br>
+<div>
+    <h5>@Model.Message</h5>
+</div>
