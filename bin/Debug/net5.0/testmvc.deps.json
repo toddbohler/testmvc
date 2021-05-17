@@ -39,6 +39,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.6",
           "Serilog.AspNetCore": "4.1.0",
+          "Serilog.Settings.Configuration": "3.1.0",
           "Serilog.Sinks.File": "4.1.0",
           "Serilog.Sinks.SQLite": "5.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",

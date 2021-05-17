@@ -14,12 +14,18 @@ namespace testmvc
     {
         public static void Main(string[] args)
         {
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
                 .WriteTo.SQLite(sqliteDbPath:Environment.CurrentDirectory + @"/Logs/log.db")
                 .WriteTo.File("Logs/logs.txt", rollingInterval:RollingInterval.Month)
                 .CreateLogger();
+                //.ReadFrom.Configuration(configuration)
+                //.CreateLogger();
 
             try 
             {
