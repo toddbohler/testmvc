@@ -94,3 +94,73 @@
 2021-05-17 14:20:01.102 -04:00 [INF] Hosting environment: Development
 2021-05-17 14:20:01.102 -04:00 [INF] Content root path: /Users/williambohler/Documents/GitHub/testmvc
 2021-05-17 14:20:15.343 -04:00 [INF] Application is shutting down...
+2021-05-17 14:34:21.029 -04:00 [INF] Starting Web Host
+2021-05-17 14:34:21.365 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-17 14:34:21.540 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-17 14:34:21.541 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-17 14:34:21.542 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-17 14:34:21.542 -04:00 [INF] Hosting environment: Development
+2021-05-17 14:34:21.543 -04:00 [INF] Content root path: C:\Users\toddb\OneDrive\Documents\GitHub\testmvc
+2021-05-17 14:34:23.537 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2021-05-17 14:34:23.551 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 307 0 - 15.4896ms
+2021-05-17 14:34:23.570 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-05-17 14:34:23.613 -04:00 [INF] Executing endpoint '/Index'
+2021-05-17 14:34:23.654 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-05-17 14:34:23.665 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-05-17 14:34:23.668 -04:00 [INF] OnGet started!!
+2021-05-17 14:34:23.669 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-05-17 14:34:23.672 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-05-17 14:34:23.673 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-05-17 14:34:23.776 -04:00 [INF] Executed page /Index in 117.5589ms
+2021-05-17 14:34:23.777 -04:00 [INF] Executed endpoint '/Index'
+2021-05-17 14:34:23.781 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 210.6651ms
+2021-05-17 14:34:23.811 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-05-17 14:34:23.811 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-05-17 14:34:23.811 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-05-17 14:34:23.811 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-05-17 14:34:23.811 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-05-17 14:34:23.821 -04:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\js\site.js'
+2021-05-17 14:34:23.821 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\css\site.css'
+2021-05-17 14:34:23.823 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 11.7323ms
+2021-05-17 14:34:23.824 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 200 1482 text/css 13.1480ms
+2021-05-17 14:34:23.825 -04:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-05-17 14:34:23.825 -04:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-05-17 14:34:23.826 -04:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-05-17 14:34:23.829 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 18.0047ms
+2021-05-17 14:34:23.830 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 18.3752ms
+2021-05-17 14:34:23.830 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 19.0483ms
+2021-05-17 14:34:32.243 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 306
+2021-05-17 14:34:32.245 -04:00 [INF] Executing endpoint '/Index'
+2021-05-17 14:34:32.246 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-05-17 14:34:32.258 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-05-17 14:34:32.260 -04:00 [INF] FirstSubmit Triggered!!
+2021-05-17 14:34:32.261 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-05-17 14:34:32.261 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-05-17 14:34:32.262 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-05-17 14:34:32.266 -04:00 [INF] Executed page /Index in 18.8545ms
+2021-05-17 14:34:32.268 -04:00 [INF] Executed endpoint '/Index'
+2021-05-17 14:34:32.269 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 306 - 200 - text/html;+charset=utf-8 25.1063ms
+2021-05-17 14:34:32.283 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-05-17 14:34:32.283 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-05-17 14:34:32.285 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\css\site.css'
+2021-05-17 14:34:32.286 -04:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-05-17 14:34:32.286 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 200 1482 text/css 3.8790ms
+2021-05-17 14:34:32.287 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 4.8099ms
+2021-05-17 14:34:33.513 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 306
+2021-05-17 14:34:33.514 -04:00 [INF] Executing endpoint '/Index'
+2021-05-17 14:34:33.515 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-05-17 14:34:33.517 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-05-17 14:34:33.518 -04:00 [INF] SecondSubmit Triggered!!
+2021-05-17 14:34:33.519 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-05-17 14:34:33.520 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-05-17 14:34:33.521 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-05-17 14:34:33.523 -04:00 [INF] Executed page /Index in 7.1652ms
+2021-05-17 14:34:33.524 -04:00 [INF] Executed endpoint '/Index'
+2021-05-17 14:34:33.525 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 306 - 200 - text/html;+charset=utf-8 12.6394ms
+2021-05-17 14:34:33.537 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-05-17 14:34:33.537 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-05-17 14:34:33.538 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\css\site.css'
+2021-05-17 14:34:33.539 -04:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\toddb\OneDrive\Documents\GitHub\testmvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-05-17 14:34:33.540 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 200 1482 text/css 2.6143ms
+2021-05-17 14:34:33.541 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 3.7039ms
+2021-05-17 14:34:46.319 -04:00 [INF] Application is shutting down...
