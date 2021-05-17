@@ -20,20 +20,19 @@ namespace testmvc
                 .WriteTo.File("Logs/logs.txt", rollingInterval:RollingInterval.Month)
                 .CreateLogger();
 
-                try 
-                {
-                    Log.Information("Starting Web Host");
-                     CreateHostBuilder(args).Build().Run();
-                }
-                catch(Exception ex)
-                {
-                    Log.Fatal(ex, "Host Terminated Unexpedtedly");
-                }
-                finally
-                {
-                    Log.CloseAndFlush();
-                }
-           
+            try 
+            {
+                Log.Information("Starting Web Host");
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch(Exception ex)
+            {
+                Log.Fatal(ex, "Host Terminated Unexpedtedly");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
