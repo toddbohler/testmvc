@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace testmvc.Migrations
 {
     [DbContext(typeof(SQLiteDbContext))]
-    [Migration("20210516235925_InitialMigration")]
+    [Migration("20210517165731_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -17,6 +17,7 @@ namespace testmvc
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
+                .WriteTo.SQLite(sqliteDbPath:Environment.CurrentDirectory + @"/Logs/log.db")
                 .WriteTo.File("Logs/logs.txt", rollingInterval:RollingInterval.Month)
                 .CreateLogger();
 
