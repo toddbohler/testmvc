@@ -6489,31 +6489,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\toddb\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/williambohler/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
+      "projectUniqueName": "/Users/williambohler/Documents/GitHub/testmvc/testmvc.csproj",
       "projectName": "testmvc",
-      "projectPath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
-      "packagesPath": "C:\\Users\\toddb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\obj\\",
+      "projectPath": "/Users/williambohler/Documents/GitHub/testmvc/testmvc.csproj",
+      "packagesPath": "/Users/williambohler/.nuget/packages/",
+      "outputPath": "/Users/williambohler/Documents/GitHub/testmvc/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\toddb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/williambohler/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6587,7 +6580,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

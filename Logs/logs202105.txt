@@ -86,3 +86,11 @@
 2021-05-17 13:38:21.510 -04:00 [INF] Executed endpoint '/Index'
 2021-05-17 13:38:21.522 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 414.8852ms
 2021-05-17 13:38:34.502 -04:00 [INF] Application is shutting down...
+2021-05-17 14:20:00.198 -04:00 [INF] Starting Web Host
+2021-05-17 14:20:00.706 -04:00 [INF] User profile is available. Using '/Users/williambohler/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-05-17 14:20:01.098 -04:00 [INF] Now listening on: https://localhost:5001
+2021-05-17 14:20:01.100 -04:00 [INF] Now listening on: http://localhost:5000
+2021-05-17 14:20:01.101 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-05-17 14:20:01.102 -04:00 [INF] Hosting environment: Development
+2021-05-17 14:20:01.102 -04:00 [INF] Content root path: /Users/williambohler/Documents/GitHub/testmvc
+2021-05-17 14:20:15.343 -04:00 [INF] Application is shutting down...
