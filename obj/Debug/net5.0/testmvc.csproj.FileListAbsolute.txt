@@ -9,7 +9,6 @@ D:\testmvc\bin\Debug\net5.0\ref\testmvc.dll
 D:\testmvc\bin\Debug\net5.0\testmvc.pdb
 D:\testmvc\bin\Debug\net5.0\testmvc.Views.dll
 D:\testmvc\bin\Debug\net5.0\testmvc.Views.pdb
-D:\testmvc\obj\Debug\net5.0\testmvc.csprojAssemblyReference.cache
 D:\testmvc\obj\Debug\net5.0\testmvc.GeneratedMSBuildEditorConfig.editorconfig
 D:\testmvc\obj\Debug\net5.0\testmvc.AssemblyInfoInputs.cache
 D:\testmvc\obj\Debug\net5.0\testmvc.AssemblyInfo.cs
@@ -138,3 +137,4 @@ C:\Users\toddb\Documents\GitHub\testmvc\obj\Debug\net5.0\testmvc.dll
 C:\Users\toddb\Documents\GitHub\testmvc\obj\Debug\net5.0\ref\testmvc.dll
 C:\Users\toddb\Documents\GitHub\testmvc\obj\Debug\net5.0\testmvc.pdb
 C:\Users\toddb\Documents\GitHub\testmvc\obj\Debug\net5.0\testmvc.genruntimeconfig.cache
+D:\testmvc\obj\Debug\net5.0\testmvc.csproj.AssemblyReference.cache
