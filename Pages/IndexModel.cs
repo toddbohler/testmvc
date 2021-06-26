@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using testmvc.Models;
 
 namespace testmvc.Pages
 {
     public class IndexModel : PageModel
     {
         public List<SelectListItem> Items => 
-        Enumerable.Range(1, 20).Select(x => new SelectListItem {
-            Value = x.ToString(),
-            Text = x.ToString()
-        }).ToList();
+            Enumerable.Range(1, 20).Select(x => new SelectListItem {
+                Value = x.ToString(),
+                Text = x.ToString()
+            }).ToList();
 
         [BindProperty]
         [DisplayName("Age")]
