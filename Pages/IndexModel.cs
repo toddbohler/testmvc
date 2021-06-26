@@ -17,7 +17,7 @@ namespace testmvc.Pages
                 Text = x.ToString()
             }).ToList();
 
-        [BindProperty]
+       
         [DisplayName("Age")]
         public int Age { get; set; }
 
@@ -28,6 +28,7 @@ namespace testmvc.Pages
 
         [BindProperty]
         [DisplayName("Last Name")]
+        [Required(ErrorMessage = "Last Name is required.")]
         public string lastName { get; set; }
 
         [BindProperty]
@@ -88,10 +89,19 @@ namespace testmvc.Pages
             this.Message = "FirstSubmit Triggered!!";
         }
 
-        public void OnPostSecondSubmit()
+        public IActionResult OnPostSecondSubmit()
         {
-            _logger.LogInformation("SecondSubmit Triggered!!");
-            this.Message = "SecondSubmit Triggered!!";
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            else
+            {
+                _logger.LogInformation("SecondSubmit Triggered!!");
+                this.Message = "SecondSubmit Triggered!!";
+                return RedirectToPage("Index");
+            }
+            
         }
     }
 }
