@@ -1,0 +1,587 @@
+2021-06-26 14:39:45.637 -04:00 [INF] Starting Web Host
+2021-06-26 14:39:46.540 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:39:46.859 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:39:46.866 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:39:46.866 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:39:46.931 -04:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:54405/ - 0
+2021-06-26 14:39:46.931 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2021-06-26 14:39:47.002 -04:00 [INF] Request finished HTTP/1.1 DEBUG http://localhost:54405/ - 0 - 307 - - 70.8648ms
+2021-06-26 14:39:47.011 -04:00 [INF] Request starting HTTP/1.1 DEBUG https://localhost:44379/ - 0
+2021-06-26 14:39:47.092 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:39:47.092 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:39:47.228 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:39:47.229 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:39:47.282 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:39:47.285 -04:00 [INF] OnGet started!!
+2021-06-26 14:39:47.286 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:39:47.298 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:39:47.299 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:39:47.246 -04:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.y672zxyvQ9E" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.y672zxyvQ9E" is not present.
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2021-06-26 14:39:47.319 -04:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2021-06-26 14:39:47.321 -04:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2021-06-26 14:39:47.324 -04:00 [INF] Executed page /Index in 91.9073ms
+2021-06-26 14:39:47.327 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:39:47.330 -04:00 [INF] Request finished HTTP/1.1 DEBUG https://localhost:44379/ - 0 - 400 - - 318.5734ms
+2021-06-26 14:39:47.596 -04:00 [INF] Executed page /Index in 366.2187ms
+2021-06-26 14:39:47.596 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:39:47.603 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 675.7842ms
+2021-06-26 14:39:47.627 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/css/site.css - -
+2021-06-26 14:39:47.625 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/lib/jquery/dist/jquery.min.js - -
+2021-06-26 14:39:47.628 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-06-26 14:39:47.630 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-06-26 14:39:47.634 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-06-26 14:39:47.652 -04:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2021-06-26 14:39:47.652 -04:00 [INF] The file /css/site.css was not modified
+2021-06-26 14:39:47.652 -04:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-06-26 14:39:47.652 -04:00 [INF] The file /js/site.js was not modified
+2021-06-26 14:39:47.652 -04:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2021-06-26 14:39:47.656 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/css/site.css - - - 304 - text/css 29.0157ms
+2021-06-26 14:39:47.656 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 25.5463ms
+2021-06-26 14:39:47.656 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 30.9664ms
+2021-06-26 14:39:47.656 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 22.7319ms
+2021-06-26 14:39:47.656 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 27.5383ms
+2021-06-26 14:39:47.770 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/favicon.ico - -
+2021-06-26 14:39:47.784 -04:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\toddb\source\repos\testmvc\wwwroot\favicon.ico'
+2021-06-26 14:39:47.785 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/favicon.ico - - - 200 5430 image/x-icon 14.7238ms
+2021-06-26 14:39:54.956 -04:00 [INF] Starting Web Host
+2021-06-26 14:39:55.126 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:39:55.210 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:39:55.210 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:39:55.210 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:39:55.229 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2021-06-26 14:39:55.264 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:39:55.309 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:39:55.326 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:39:55.331 -04:00 [INF] OnGet started!!
+2021-06-26 14:39:55.331 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:39:55.334 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:39:55.335 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:39:55.474 -04:00 [INF] Executed page /Index in 161.3552ms
+2021-06-26 14:39:55.475 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:39:55.479 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 251.1060ms
+2021-06-26 14:41:50.577 -04:00 [INF] Starting Web Host
+2021-06-26 14:41:52.972 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:41:53.090 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:41:53.091 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:41:53.091 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:41:53.092 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:41:53.092 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:41:53.889 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:41:53.926 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 39.5193ms
+2021-06-26 14:42:11.802 -04:00 [INF] Starting Web Host
+2021-06-26 14:42:12.057 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:42:12.177 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:42:12.178 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:42:12.179 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:42:12.179 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:42:12.180 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:42:13.052 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:42:13.100 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:42:13.160 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:42:13.179 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:42:13.185 -04:00 [INF] OnGet started!!
+2021-06-26 14:42:13.186 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:42:13.190 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:42:13.191 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:42:13.366 -04:00 [INF] Executed page /Index in 199.7867ms
+2021-06-26 14:42:13.368 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:42:13.373 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 323.2736ms
+2021-06-26 14:42:23.977 -04:00 [INF] Starting Web Host
+2021-06-26 14:42:24.680 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:42:25.102 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:42:25.102 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:42:25.104 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:42:25.105 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:42:25.105 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:42:26.143 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:42:26.301 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:42:26.438 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:42:26.470 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:42:26.473 -04:00 [INF] OnGet started!!
+2021-06-26 14:42:26.474 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:42:26.477 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:42:26.478 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:42:26.744 -04:00 [INF] Executed page /Index in 302.1052ms
+2021-06-26 14:42:26.750 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:42:26.759 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 617.6034ms
+2021-06-26 14:42:49.260 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:42:49.261 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:42:49.262 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:42:49.263 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:42:49.264 -04:00 [INF] OnGet started!!
+2021-06-26 14:42:49.265 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:42:49.265 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:42:49.266 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:42:49.275 -04:00 [INF] Executed page /Index in 11.1955ms
+2021-06-26 14:42:49.276 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:42:49.277 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 17.3281ms
+2021-06-26 14:42:54.449 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 255
+2021-06-26 14:42:54.450 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:42:54.451 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:42:54.486 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:42:54.486 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:42:54.487 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:42:54.488 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:42:54.488 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:42:54.491 -04:00 [INF] Executed page /Index in 39.0851ms
+2021-06-26 14:42:54.492 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:42:54.493 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 255 - 200 - text/html;+charset=utf-8 43.9368ms
+2021-06-26 14:42:58.724 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 255
+2021-06-26 14:42:58.725 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:42:58.725 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:42:58.727 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Invalid"
+2021-06-26 14:42:58.728 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:42:58.728 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:42:58.729 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:42:58.730 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:42:58.732 -04:00 [INF] Executed page /Index in 5.7645ms
+2021-06-26 14:42:58.732 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:42:58.733 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 255 - 200 - text/html;+charset=utf-8 9.0394ms
+2021-06-26 14:43:13.530 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 255
+2021-06-26 14:43:13.531 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:43:13.532 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:43:13.533 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:43:13.534 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:43:13.534 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:43:13.535 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:43:13.535 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:43:13.537 -04:00 [INF] Executed page /Index in 4.758ms
+2021-06-26 14:43:13.538 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:43:13.539 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 255 - 200 - text/html;+charset=utf-8 8.8946ms
+2021-06-26 14:43:17.859 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:43:17.861 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:43:17.862 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:43:17.865 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:43:17.865 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:43:17.866 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:43:17.866 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:43:17.867 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:43:17.869 -04:00 [INF] Executed page /Index in 6.2225ms
+2021-06-26 14:43:17.869 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:43:17.870 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 11.0128ms
+2021-06-26 14:43:21.818 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:43:21.819 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:43:21.819 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:43:21.821 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Invalid"
+2021-06-26 14:43:21.821 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:43:21.822 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:43:21.823 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:43:21.823 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:43:21.825 -04:00 [INF] Executed page /Index in 4.8117ms
+2021-06-26 14:43:21.826 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:43:21.828 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 10.2205ms
+2021-06-26 14:43:26.370 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:43:26.371 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:43:26.372 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:43:26.373 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:43:26.374 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:43:26.374 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:43:26.375 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:43:26.376 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:43:26.379 -04:00 [INF] Executed page /Index in 6.4988ms
+2021-06-26 14:43:26.380 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:43:26.381 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 10.6000ms
+2021-06-26 14:44:45.919 -04:00 [INF] Starting Web Host
+2021-06-26 14:44:46.484 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:44:46.866 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:44:46.866 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:44:46.868 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:44:46.868 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:44:46.869 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:44:47.783 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:44:47.928 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:44:48.054 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:44:48.088 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:44:48.091 -04:00 [INF] OnGet started!!
+2021-06-26 14:44:48.092 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:44:48.095 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:44:48.097 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:44:48.375 -04:00 [INF] Executed page /Index in 316.3516ms
+2021-06-26 14:44:48.381 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:44:48.391 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 609.0635ms
+2021-06-26 14:45:11.994 -04:00 [INF] Starting Web Host
+2021-06-26 14:45:12.746 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:45:13.140 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:45:13.141 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:45:13.143 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:45:13.144 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:45:13.145 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:45:13.762 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:45:13.902 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:45:14.051 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:45:14.085 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:45:14.088 -04:00 [INF] OnGet started!!
+2021-06-26 14:45:14.089 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:45:14.092 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:45:14.092 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:45:14.354 -04:00 [INF] Executed page /Index in 297.6808ms
+2021-06-26 14:45:14.358 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:45:14.368 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 607.7825ms
+2021-06-26 14:48:01.911 -04:00 [INF] Starting Web Host
+2021-06-26 14:48:02.524 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:48:02.909 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:48:02.910 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:48:02.911 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:48:02.912 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:48:02.913 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:48:03.466 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:48:03.566 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:48:03.662 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:48:03.689 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:48:03.692 -04:00 [INF] OnGet started!!
+2021-06-26 14:48:03.692 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:48:03.694 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:48:03.695 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:48:03.889 -04:00 [INF] Executed page /Index in 223.068ms
+2021-06-26 14:48:03.892 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:48:03.899 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 433.6053ms
+2021-06-26 14:48:43.025 -04:00 [INF] Starting Web Host
+2021-06-26 14:48:43.748 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:48:44.135 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:48:44.135 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:48:44.136 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:48:44.137 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:48:44.138 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:48:44.859 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:48:45.000 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:48:45.137 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:48:45.170 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:48:45.174 -04:00 [INF] OnGet started!!
+2021-06-26 14:48:45.174 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:48:45.177 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:48:45.178 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:48:45.456 -04:00 [INF] Executed page /Index in 313.7159ms
+2021-06-26 14:48:45.460 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:48:45.471 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 613.5639ms
+2021-06-26 14:52:29.010 -04:00 [INF] Starting Web Host
+2021-06-26 14:52:29.598 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:52:29.986 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:52:29.986 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:52:29.987 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:52:29.988 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:52:29.988 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:52:30.867 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:52:31.007 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:52:31.141 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:52:31.176 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:52:31.180 -04:00 [INF] OnGet started!!
+2021-06-26 14:52:31.181 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:52:31.184 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:52:31.185 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:52:31.453 -04:00 [INF] Executed page /Index in 305.9573ms
+2021-06-26 14:52:31.457 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:52:31.468 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 600.9606ms
+2021-06-26 14:52:37.073 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:52:37.074 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:52:37.075 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:52:37.117 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:52:37.118 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:52:37.119 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:52:37.120 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:52:37.120 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:52:37.126 -04:00 [INF] Executed page /Index in 49.4544ms
+2021-06-26 14:52:37.127 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:52:37.128 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 55.8906ms
+2021-06-26 14:52:39.492 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:52:39.493 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:52:39.494 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:52:39.495 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Invalid"
+2021-06-26 14:52:39.496 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:52:39.496 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:52:39.497 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:52:39.499 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:52:39.502 -04:00 [INF] Executed page /Index in 7.7366ms
+2021-06-26 14:52:39.503 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:52:39.504 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 11.6959ms
+2021-06-26 14:52:58.584 -04:00 [INF] Starting Web Host
+2021-06-26 14:52:59.340 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:52:59.752 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:52:59.752 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:52:59.754 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:52:59.754 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:52:59.755 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:53:00.783 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:53:00.917 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:01.058 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:01.090 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:53:01.093 -04:00 [INF] OnGet started!!
+2021-06-26 14:53:01.094 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:53:01.097 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:01.098 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:01.369 -04:00 [INF] Executed page /Index in 306.8349ms
+2021-06-26 14:53:01.374 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:01.387 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 605.5397ms
+2021-06-26 14:53:06.146 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:53:06.147 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:06.148 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:06.186 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:53:06.187 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:53:06.187 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:53:06.188 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:06.189 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:06.194 -04:00 [INF] Executed page /Index in 44.4807ms
+2021-06-26 14:53:06.195 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:06.196 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 50.6810ms
+2021-06-26 14:53:15.786 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:53:15.787 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:15.788 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:15.789 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-06-26 14:53:15.790 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:53:15.791 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:53:15.791 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:15.792 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:15.794 -04:00 [INF] Executed page /Index in 6.0355ms
+2021-06-26 14:53:15.795 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:15.796 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 9.7621ms
+2021-06-26 14:53:20.866 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:53:20.867 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:20.868 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:20.869 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:53:20.870 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:53:20.871 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:53:20.872 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:20.872 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:20.874 -04:00 [INF] Executed page /Index in 5.7454ms
+2021-06-26 14:53:20.875 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:20.876 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 10.2662ms
+2021-06-26 14:53:21.865 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:53:21.866 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:21.867 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:21.868 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-06-26 14:53:21.869 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:53:21.869 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:53:21.870 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:21.870 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:21.872 -04:00 [INF] Executed page /Index in 4.5546ms
+2021-06-26 14:53:21.873 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:21.873 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 8.3467ms
+2021-06-26 14:53:33.820 -04:00 [INF] Starting Web Host
+2021-06-26 14:53:33.961 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:53:34.090 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:53:34.091 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:53:34.092 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:53:34.092 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:53:34.093 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:53:34.581 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:53:34.633 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:34.691 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:34.708 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:53:34.712 -04:00 [INF] OnGet started!!
+2021-06-26 14:53:34.713 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:53:34.718 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:53:34.719 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:34.890 -04:00 [INF] Executed page /Index in 193.265ms
+2021-06-26 14:53:34.892 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:34.897 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 318.8078ms
+2021-06-26 14:53:38.120 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:53:38.121 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:38.122 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:38.133 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:53:38.134 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:53:38.135 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:53:38.135 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:53:38.136 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:38.140 -04:00 [INF] Executed page /Index in 18.0864ms
+2021-06-26 14:53:38.141 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:38.142 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 21.7100ms
+2021-06-26 14:53:45.593 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:53:45.594 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:53:45.595 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:53:45.597 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Invalid"
+2021-06-26 14:53:45.598 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:53:45.598 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:53:45.599 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:53:45.600 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:53:45.602 -04:00 [INF] Executed page /Index in 6.266ms
+2021-06-26 14:53:45.602 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:53:45.603 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 10.3010ms
+2021-06-26 14:54:00.886 -04:00 [INF] Starting Web Host
+2021-06-26 14:54:01.036 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:54:01.168 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:54:01.169 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:54:01.169 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:54:01.170 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:54:01.170 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:54:02.034 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:54:02.095 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:02.152 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:02.170 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:54:02.176 -04:00 [INF] OnGet started!!
+2021-06-26 14:54:02.176 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:54:02.181 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:54:02.182 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:02.366 -04:00 [INF] Executed page /Index in 208.6041ms
+2021-06-26 14:54:02.369 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:02.373 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 342.9287ms
+2021-06-26 14:54:05.679 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:54:05.680 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:05.681 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:05.692 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Invalid"
+2021-06-26 14:54:05.693 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:54:05.694 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:54:05.695 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:54:05.695 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:05.700 -04:00 [INF] Executed page /Index in 17.7633ms
+2021-06-26 14:54:05.700 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:05.701 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 22.1890ms
+2021-06-26 14:54:07.201 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329
+2021-06-26 14:54:07.201 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:07.203 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:07.205 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Invalid"
+2021-06-26 14:54:07.206 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:54:07.206 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:54:07.207 -04:00 [INF] Executing an implicit handler method - ModelState is "Invalid"
+2021-06-26 14:54:07.208 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:07.210 -04:00 [INF] Executed page /Index in 5.9582ms
+2021-06-26 14:54:07.211 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:07.211 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 329 - 200 - text/html;+charset=utf-8 10.7846ms
+2021-06-26 14:54:13.260 -04:00 [INF] Starting Web Host
+2021-06-26 14:54:13.997 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:54:14.408 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:54:14.408 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:54:14.410 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:54:14.410 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:54:14.411 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:54:15.003 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:54:15.131 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:15.265 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:15.298 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:54:15.302 -04:00 [INF] OnGet started!!
+2021-06-26 14:54:15.302 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:54:15.305 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:54:15.306 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:15.570 -04:00 [INF] Executed page /Index in 300.5953ms
+2021-06-26 14:54:15.575 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:15.587 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 586.4761ms
+2021-06-26 14:54:19.938 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:54:19.939 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:19.940 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:19.978 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:54:19.979 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:54:19.980 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:54:19.981 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:54:19.981 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:19.987 -04:00 [INF] Executed page /Index in 45.8965ms
+2021-06-26 14:54:19.989 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:19.990 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 51.9207ms
+2021-06-26 14:54:38.818 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:54:38.819 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:54:38.820 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:54:38.822 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-06-26 14:54:38.823 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:54:38.823 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:54:38.824 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:54:38.825 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:54:38.827 -04:00 [INF] Executed page /Index in 6.2243ms
+2021-06-26 14:54:38.828 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:54:38.829 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 10.6994ms
+2021-06-26 14:54:59.187 -04:00 [INF] Starting Web Host
+2021-06-26 14:54:59.893 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:55:00.300 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:55:00.301 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:55:00.302 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:55:00.303 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:55:00.303 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:55:00.925 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:55:01.067 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:55:01.200 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:55:01.233 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:55:01.237 -04:00 [INF] OnGet started!!
+2021-06-26 14:55:01.237 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:55:01.241 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:55:01.242 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:55:01.510 -04:00 [INF] Executed page /Index in 304.0401ms
+2021-06-26 14:55:01.516 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:55:01.527 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 604.1574ms
+2021-06-26 14:55:05.778 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:55:05.779 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:55:05.780 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:55:05.818 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:55:05.819 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:55:05.820 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:55:05.820 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:55:05.821 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:55:05.826 -04:00 [INF] Executed page /Index in 44.5352ms
+2021-06-26 14:55:05.828 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:55:05.829 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 51.1073ms
+2021-06-26 14:55:53.510 -04:00 [INF] Starting Web Host
+2021-06-26 14:55:54.194 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:55:54.594 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-26 14:55:54.595 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-26 14:55:54.596 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:55:54.597 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:55:54.598 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-26 14:55:55.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-06-26 14:55:55.458 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:55:55.586 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:55:55.617 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:55:55.620 -04:00 [INF] OnGet started!!
+2021-06-26 14:55:55.621 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:55:55.624 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:55:55.625 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:55:55.890 -04:00 [INF] Executed page /Index in 299.587ms
+2021-06-26 14:55:55.895 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:55:55.904 -04:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 617.6659ms
+2021-06-26 14:56:06.823 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:56:06.824 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:56:06.826 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:56:06.864 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:56:06.865 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:56:06.866 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:56:06.867 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:56:06.868 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:56:06.873 -04:00 [INF] Executed page /Index in 46.4476ms
+2021-06-26 14:56:06.874 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:56:06.875 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 51.9663ms
+2021-06-26 14:56:31.987 -04:00 [INF] Request starting HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:56:31.988 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:56:31.989 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:56:31.990 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-06-26 14:56:31.991 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:56:31.991 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:56:31.992 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:56:31.994 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:56:31.996 -04:00 [INF] Executed page /Index in 6.8958ms
+2021-06-26 14:56:31.997 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:56:31.998 -04:00 [INF] Request finished HTTP/2 POST https://localhost:5001/?handler=SecondSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 11.1034ms
+2021-06-26 14:59:32.450 -04:00 [INF] Starting Web Host
+2021-06-26 14:59:32.974 -04:00 [INF] User profile is available. Using 'C:\Users\toddb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-06-26 14:59:33.090 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:59:33.090 -04:00 [INF] Hosting environment: Development
+2021-06-26 14:59:33.090 -04:00 [INF] Content root path: C:\Users\toddb\Source\Repos\testmvc
+2021-06-26 14:59:33.120 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - -
+2021-06-26 14:59:33.155 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:59:33.209 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:59:33.219 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-06-26 14:59:33.221 -04:00 [INF] OnGet started!!
+2021-06-26 14:59:33.221 -04:00 [INF] Executed handler method OnGet, returned result .
+2021-06-26 14:59:33.223 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:59:33.223 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:59:33.338 -04:00 [INF] Executed page /Index in 126.5129ms
+2021-06-26 14:59:33.339 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:59:33.345 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - - - 200 - text/html;+charset=utf-8 226.9214ms
+2021-06-26 14:59:39.187 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44379/?handler=FirstSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:59:39.188 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:59:39.188 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:59:39.207 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostFirstSubmit - ModelState is "Valid"
+2021-06-26 14:59:39.207 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-26 14:59:39.207 -04:00 [INF] Executed handler method OnPostFirstSubmit, returned result .
+2021-06-26 14:59:39.207 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:59:39.207 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:59:39.215 -04:00 [INF] Executed page /Index in 26.7066ms
+2021-06-26 14:59:39.215 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:59:39.216 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44379/?handler=FirstSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 28.6622ms
+2021-06-26 14:59:40.577 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44379/?handler=SecondSubmit application/x-www-form-urlencoded 331
+2021-06-26 14:59:40.577 -04:00 [INF] Executing endpoint '/Index'
+2021-06-26 14:59:40.577 -04:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2021-06-26 14:59:40.579 -04:00 [INF] Executing handler method testmvc.Pages.IndexModel.OnPostSecondSubmit - ModelState is "Valid"
+2021-06-26 14:59:40.579 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-26 14:59:40.579 -04:00 [INF] Executed handler method OnPostSecondSubmit, returned result .
+2021-06-26 14:59:40.579 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-06-26 14:59:40.579 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-06-26 14:59:40.581 -04:00 [INF] Executed page /Index in 3.9167ms
+2021-06-26 14:59:40.581 -04:00 [INF] Executed endpoint '/Index'
+2021-06-26 14:59:40.582 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44379/?handler=SecondSubmit application/x-www-form-urlencoded 331 - 200 - text/html;+charset=utf-8 4.9072ms

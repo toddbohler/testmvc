@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u1XdYjUdZOuhlcDgmSX9qjsgciM3WC8vTyfXKZjplRrGo14O1cQer7Jn3OsMH1K0Zkw5+I2EWQUgGthADyPX6w==",
+  "dgSpecHash": "Q/ynrgT+TR5xJ9GPsqLW8JCrn+DNCE/XozR216FAccIDXGzSDJ/Q5JTQHBHEr9zY7InkCQ3osYqcTVEfwvANlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\toddb\\source\\repos\\testmvc\\testmvc.csproj",
+  "projectFilePath": "C:\\Users\\toddb\\Source\\Repos\\testmvc\\testmvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\toddb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\toddb\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

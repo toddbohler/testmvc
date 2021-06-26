@@ -54,6 +54,7 @@ namespace testmvc.Pages
         public string email { get; set; }
         
         public string Message { get; set; } = "Initial Request";
+        
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
