@@ -1,0 +1,10 @@
+2021-06-27 12:53:52.590 -04:00 [INF] Starting Web Host
+2021-06-27 12:53:53.414 -04:00 [INF] Now listening on: https://localhost:5001
+2021-06-27 12:53:53.416 -04:00 [INF] Now listening on: http://localhost:5000
+2021-06-27 12:53:53.417 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-27 12:53:53.418 -04:00 [INF] Hosting environment: Production
+2021-06-27 12:53:53.418 -04:00 [INF] Content root path: C:\Users\toddb\source\repos\testmvc
+2021-06-27 12:53:54.319 -04:00 [INF] OnGet started!!
+2021-06-27 12:53:56.466 -04:00 [INF] FirstSubmit Triggered!!
+2021-06-27 12:53:57.305 -04:00 [INF] SecondSubmit Triggered!!
+2021-06-27 12:53:57.311 -04:00 [INF] OnGet started!!

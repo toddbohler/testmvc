@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace testmvc
 {
@@ -53,6 +54,7 @@ namespace testmvc
             {
                 endpoints.MapRazorPages();
             });
+            
         }
     }
 }

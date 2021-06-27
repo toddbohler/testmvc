@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IgxkxSKUmCQGUm+vsDqdhb/B08+YR5Q5U7G5m9bbZEBpYTSPQ/lvdb5phKNj9+PtbcThU2A9qHCHMbhsskte0w==",
+  "dgSpecHash": "fd0j8R+4EMKSyjbkpUxydpcAqgVqj2ucIoJc2bNKScrC075ZNY4jJCl3KKmUeflalb4sjciqvCbanFXyzajcbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\toddb\\Documents\\GitHub\\testmvc\\testmvc.csproj",
+  "projectFilePath": "C:\\Users\\toddb\\source\\repos\\testmvc\\testmvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\toddb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\toddb\\.nuget\\packages\\microsoft.azure.services.appauthentication\\1.4.0\\microsoft.azure.services.appauthentication.1.4.0.nupkg.sha512",

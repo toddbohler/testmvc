@@ -15,18 +15,15 @@ namespace testmvc
         public static void Main(string[] args)
         {
             var configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development"}.json", optional: true)
+                .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", optional: true)
                 .Build();
-
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Information()
-                .WriteTo.Console()
-                //.WriteTo.SQLite(sqliteDbPath: Environment.CurrentDirectory + @"/Logs/log.db")
-                .WriteTo.MSSqlServer("Server=localhost;Database=TestMVC_DB;Trusted_Connection=True;", tableName: "LogTable")
-                .WriteTo.File("Logs/logs.txt", rollingInterval:RollingInterval.Month)
+            
+                Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(configuration)
                 .CreateLogger();
-                //.ReadFrom.Configuration(configuration)
-                //.CreateLogger();
+
 
             try 
             {
@@ -46,9 +43,9 @@ namespace testmvc
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
             .UseSerilog()
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
     }
 }

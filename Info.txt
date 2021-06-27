@@ -5,13 +5,22 @@ https://codingblast.com/entityframework-core-add-implementation-idesigntimedbcon
 http://shahriat-hossain.blogspot.com/2018/01/more-than-one-dbcontext-was-found-while.html
 https://www.c-sharpcorner.com/article/file-logging-and-ms-sql-logging-using-serilog-with-asp-net-core-2-0/
 https://gitmemory.com/issue/serilog/serilog-sinks-mssqlserver/322/719108549
+https://vmsdurano.com/serilog-and-asp-net-core-split-log-data-using-filterexpression/
+https://andrewlock.net/how-to-set-the-hosting-environment-in-asp-net-core/
+https://www.c-sharpcorner.com/article/serilog-in-dotnet-core/
 
 SQL Server Location:
 DESKTOP-FRPUPS7\SQLEXPRESS
 
 Migrations
+
+SQL Server
 add-migration Initial -Context SQLServerDBContext -OutputDir Migrations\SQLServerDb
 Update-Database -Context SQLServerDBContext
+
+SQLite
+add-migration Initial -Context SQLiteDbContext -OutputDir Migrations\SQLiteDb
+Update-Database -Context SQLiteDbContext
 
 Connection Strings
 SQL Server: Server=localhost;Database=master;Trusted_Connection=True;

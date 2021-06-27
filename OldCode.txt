@@ -1,0 +1,10 @@
+﻿            
+            Log.Logger = new LoggerConfiguration()
+                //.MinimumLevel.Information()
+                //.WriteTo.Console()
+                //.WriteTo.SQLite(sqliteDbPath: Environment.CurrentDirectory + @"/Logs/log.db")
+                //.WriteTo.MSSqlServer("Server=localhost;Database=TestMVC_DB;Trusted_Connection=True;", tableName: "LogTable")
+                //.WriteTo.File("Logs/logs.txt", rollingInterval:RollingInterval.Month)
+                //.CreateLogger();
+                .ReadFrom.Configuration(configuration)
+                .CreateLogger();
